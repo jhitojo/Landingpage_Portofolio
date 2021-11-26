@@ -1,0 +1,173 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #273036;
+  color: white;
+}
+
+section {
+  padding-top: 5rem;
+}
+.site-navbar {
+  text-transform: uppercase;
+}
+.site-navbar .navbar-brand {
+  display: inline-block;
+  border: 2px solid #bac964;
+  padding: 5px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* My Projets */
+#projects {
+  background-color: #273036;
+}
+
+.filters {
+  text-align: center;
+  color: white;
+}
+
+.filters ul {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.filters ul li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.filters ul li:hover {
+  color: #bac964;
+}
+.filters ul li.active {
+  color: #bac964;
+}
+
+.portfolio-area .filters-content {
+  margin-top: 50px;
+}
+
+.portfolio-area .filters-content .show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 350ms;
+  -o-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.portfolio-area .filters-content .hide {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 350ms;
+  -o-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.portfolio-area .filters-content .item {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.portfolio-area .filters-content .item img {
+  border-radius: 10px;
+}
+
+.portfolio-area .filters-content .p-inner {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.portfolio-area .filters-content .item .p-inner .cat {
+  font-size: 13px;
+}
+
+.portfolio-area .filters-content .item img {
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.middle {
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.single-portfolio:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+  padding: 16px 32px;
+}
+
+.single-portfolio {
+  border-radius: 5px;
+}
+.single-portfolio:hover .thumb .overlay-bg {
+  opacity: 0.85;
+}
+
+.thumb .overlay-bg {
+  opacity: 0;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .thumb .overlay-bg {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+
+.single-portfolio {
+  margin-bottom: 50px;
+  display: block;
+  color: white;
+}
+.single-portfolio .relative {
+  margin-bottom: 20px;
+}
+.single-portfolio .p-inner {
+  text-align: center;
+}
+.single-portfolio .p-inner h4 {
+  font-size: 20px;
+}
+.single-portfolio .p-inner .cat {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* End My Projets */
